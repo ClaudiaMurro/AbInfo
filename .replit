@@ -1,5 +1,6 @@
-language = "bash"
-run = "/bin/bash"
+language = "bash" #
+run = "/bin/bash" #
+
 entrypoint = "main.py"
 modules = ["python-3.10:v18-20230807-322e88b"]
 
@@ -10,6 +11,4 @@ channel = "stable-23_05"
 
 [deployment]
 run = ["python3", "main.py"]
-#language = "bash"
-#run = "/bin/bash"
 deploymentTarget = "cloudrun"
